@@ -1,5 +1,7 @@
 import React from 'react'
 import Logo from '../robinhood.svg'
+import './Header.css'
+
 function Header() {
     return (
         <div  className= "Header-wrapper">
@@ -15,12 +17,12 @@ function Header() {
           </div>
           </div> 
 
-<div>
+<div className="Header-menu-iteams">
  <a href="#">Free Stocks</a>
  <a href="#">Portfolio</a>
- <a href="#">Free Stocks</a>
- <a href="#">Free Stocks</a>
-
+ <a href="#">Cash</a>
+ <a href="#">Messages</a>
+ <a href="#">Account</a>
 </div>
 
 
