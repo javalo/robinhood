@@ -1,6 +1,8 @@
 
 import './App.css';
 import Header from './components/Header';
+import Newsfeed from './components/Newsfeed';
+import Stats from './components/Stats';
 
 function App() {
   return (
@@ -9,6 +11,16 @@ function App() {
        <Header/>
        </div>
        <div className="App-body"> 
+
+       <div className="App-container">
+
+       <Newsfeed/>
+
+
+<Stats/>
+ 
+       </div>
+
  
        </div>
     </div>
