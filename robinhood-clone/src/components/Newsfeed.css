@@ -1,4 +1,5 @@
 .Newsfeed{
-    background-color: red;
     flex: 0.7;
+    border: 1px solid red;
+    color: white;
 }

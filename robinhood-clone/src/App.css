@@ -10,7 +10,7 @@ body{
 }
 
 .App-container{
-    background-color: blue;
+  
     width: 1024px;
     height: 100%;
     display: flex;
