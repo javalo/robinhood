@@ -1,30 +1,88 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Line } from 'react-chartjs-2'
+import './LineGraph.css'
 
 function LineGraph() {
+
+    const  [ graphData, setGraphData ] = useState([])
+
+ 
+const createMockData =() =>{
+
+
+    let data = [];
+    let value = 50;
+    for(var i = 0; i < 366; i++){
+      let date = new Date();
+      date.setHours(0,0,0,0);
+      date.setDate(i);
+      value += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 10);
+      data.push({x: date, y: value});
+    }   
+
+    setGraphData(data)
+   
+
+
+}
+
+useEffect(()=>{
+    createMockData()
+}, [])
+
+
     return (
         <div className="LineGraph">
             
             <Line
 
 data= {{
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    
     datasets: [{
         label: '# of Votes',
         type: 'line',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
-        ]
+        data: graphData,
+
+        backgroundColor: "black",
+        borderColor:"#5AC53B",
+        borderWidth:2,
+        pointBorderColor: 'rgba(0,0,0,0)',
+        pointBackgroundColor: 'rgba(0,0,0,0)',
+        pointHoverBackgroundColor: '#5AC53B',
+        pointHoverBorderColor: '#000000',
+        pointHoverBorderWidth: 4,
+        pointHoverRadius: 6,
+
 }] 
 
 }
 }
+
+options={{
+   legend:{display:false},
+   maintainAspectRatio: false,
+    scales: {
+        xAxes: [
+            {
+              type: "time",
+              time: {
+                format: "MM/DD/YY",
+                tooltipFormat: "ll",
+              },
+              ticks: {
+                display: false,
+              }
+            },
+          ],
+        yAxes: [{
+            ticks: {
+               display: false
+            }
+        }]
+    }
+
+
+}}
 
           
             />

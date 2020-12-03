@@ -3,3 +3,11 @@
     border: 1px solid red;
     color: white;
 }
+
+.Newsfeed-portfolio h1{
+   margin: 0;
+}
+
+.Newsfeed-portfolio p{
+    margin: 0;
+ }
