@@ -1,7 +1,16 @@
 .Newsfeed{
     flex: 0.7;
-    border: 1px solid red;
+
     color: white;
+}
+
+.Newsfeed-chart-Section{
+    display: flex;
+    flex-direction: column ;
+ }
+
+.Newsfeed-portfolio{
+    text-align: left;
 }
 
 .Newsfeed-portfolio h1{
@@ -9,5 +18,13 @@
 }
 
 .Newsfeed-portfolio p{
-    margin: 0;
+    margin-top: 0;
  }
+
+ .Newsfeed-chart{
+     width: 100%;
+ 
+ }
+
+
+
