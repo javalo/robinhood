@@ -1,31 +1,27 @@
-.Stats{
-   
-    flex: 0.3;
-    flex-direction: column;
-    padding: 0px 30px 30px 30px;
-    
+.Stats {
+  flex: 0.3;
+  flex-direction: column;
+  padding: 0px 30px 30px 30px;
 }
 
-.Stats-container{
-    flex-direction: column;
-    text-align: center;
-    flex: 1;
-    background-color: #1E2023;
-    border-radius: 5px;
-    border: 1px solid #42494D;
-    color: white;
-    padding: 0px;
+.Stats-container {
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  background-color: #1e2023;
+  border-radius: 5px;
+  border: 1px solid #42494d;
+  color: white;
+  padding: 0px;
 }
 
+.Stats-header {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
 
-
-.Stats-header{
-    display: flex;
-    font-size: 16px;
-    align-items: center;
-    justify-content: space-between;
-   
-    border-bottom: 1px solid #42494D;
-    padding: 20px 20px 10px 20px;
-    font-weight: 500;
+  border-bottom: 1px solid #42494d;
+  padding: 20px 20px 10px 20px;
+  font-weight: 500;
 }

@@ -1,61 +1,45 @@
-.StatsRow{
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-    padding-right: 24px;
-    padding-left: 24px;
-    
-    border-bottom: 1px solid #42494D;
+.StatsRow {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  border-bottom: 1px solid #42494d;
 }
 
+.StatsRow-intro h1 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  text-align: left;
+}
 
-.StatsRow-intro h1{
-        font-size: 16px;
-        font-weight: bold;
-        padding-bottom: 2px;
-        text-align: left;
-    
-    }
+.StatsRow-numbers {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+}
 
+.StatsRow-price {
+  padding-bottom: 4px;
+}
 
-    .StatsRow-numbers{
+.StatsRow-percentage {
+  color: green;
+}
 
-    text-align: right;
-    font-size: 12px;
-    font-weight: 500;
+.StatsRow:hover {
+  background-color: #31363a;
+  cursor: pointer;
+}
 
-    }
+.StatsRow-intro p {
+  font-size: 12px;
+}
 
-
-    .StatsRow-price{
-
-        padding-bottom: 4px;
-
-    
-        }
-
-
-        .StatsRow-percentage{
-
-            color: green;
-        
-            }
-
-
-
-            .StatsRow:hover{
-
-                background-color:#31363A;
-                cursor: pointer;
-            }
-            
-            .StatsRow-intro p{
-
-                font-size: 12px; 
-            }
-
-            .StatsRow-chart{
-                padding-right:10px;
-                padding-left:10px;
-            }
+.StatsRow-chart {
+  padding-right: 10px;
+  padding-left: 10px;
+}
