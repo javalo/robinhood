@@ -24,3 +24,63 @@
 .Newsfeed-chart {
   width: 100%;
 }
+
+
+.Newfeed-buying-section {
+   
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #42494d;
+    padding: 10px ;  
+
+}
+
+
+.Newfeed-market-section{
+    margin-top: 50px;
+}
+
+.Newfeed-market-box{
+    height: 10vh;
+    padding:  20px ;
+
+    border: 1px solid #42494d;
+
+    border-radius: 5px;
+
+}
+
+
+.Newfeed-market-box p{
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #7B858A;
+
+}
+
+.Newsfeed-popularlists-section{
+    margin-top: 70px;
+}
+.Newsfeed-popularlists-intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.newsfeed_popularlists_badges .Topic-badge {
+
+    border: 1px solid #31363A;
+  background-color: transparent;
+  color: white;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  
+}
+
+.Topic-badge:hover{
+    background-color: green;
+}
+
