@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
        
             steps {
-                echo 'test the app ......'
+                echo 'test the app ...... every one minute'
                 
             }
         }
